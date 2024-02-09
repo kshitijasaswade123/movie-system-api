@@ -9,6 +9,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.get('/',(req,res)=>{
+  res.send("Movie System")
+})
+
 
 app.use("/api/movie", movie);
 app.use("/api/categry", categry);
